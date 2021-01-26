@@ -1,0 +1,24 @@
+{
+  "name": "PlatziReact",
+  "version": "1.0.0",
+  "description": "PlatziVideo: Practices for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paezjmv/PlatziReact.git"
+  },
+  "keywords": [],
+  "author": "Martin Paez <paezjm86@gmail.com> (https://twitter.com/Paezjmv)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paezjmv/PlatziReact/issues"
+  },
+  "homepage": "https://github.com/paezjmv/PlatziReact#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

@@ -1,2 +1,2 @@
 # PlatziReact
-PlatziVideo practices for React
+PlatziVideo: Practices for React
