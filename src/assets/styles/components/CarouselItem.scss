@@ -1,0 +1,45 @@
+.carrousel-item {
+    background-color: palevioletred;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    /* Esta propiedad nos permite redondear los bordes
+    del contenedor */
+    overflow: hidden;
+    /* Esta propiedad nos permite ocultar el overflow
+    establecido previamente en el contenedor padre,
+    para asi poder efectuar el efecto de over sin
+    sin interrupciones en la imagen */
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    /* Cambia al cursor del mouse default a una mano */
+    transition: 450ms all;
+    transform-origin: center left;
+    /* Esto es para mejorar una manera mas fluida de
+    la transformacion. */
+    position: relative;
+  }
+
+  .carrousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    /* Con esto logramos que la imagen recupere su forma
+    original (proporcional) */
+  }
+  
+  .carrousel-item__details {
+    background: linear-gradient(to top, rgba 0, 0, 0, 0.9 0%, rgba 0, 0, 0, 0 100%);
+    /* Esto nos permite desvanecer el color del fondo:
+    Desde el color transparente hasta el color mas oscuro */
+    font-size: 10px;
+    opacity: 0;
+    transition: 450 ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
