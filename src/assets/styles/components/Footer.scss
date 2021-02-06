@@ -4,7 +4,6 @@
     align-items: center;
     height: 100px;
     width: 100%;
-    position: absolute;
 }
   
 .footer a {
@@ -17,11 +16,4 @@
   
 .footer a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-.footer {
-    align-items: flex-star t;
-    flex-direction: column;
-    }
 }

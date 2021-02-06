@@ -1,15 +1,15 @@
 .carrousel {
     overflow: scroll;
-    /* Este nos permite tener la navegacion de imagines
-    en forma horizontal */
     padding-left: 30px;
     width: 100%;
     position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .carrousel__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
@@ -20,6 +20,7 @@
 }
   
 .carrousel__container:hover .carrousel-item:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     opacity: 1;
 }
