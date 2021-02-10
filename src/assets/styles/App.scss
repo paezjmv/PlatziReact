@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import './Vars.scss';
+@import './Media.scss';
 
 * {
     box-sizing: border-box;
@@ -6,6 +8,6 @@
 
 body {
   margin: 0;
-  font-family: "Muli", sans-serif;
-  background-color: #AB88FF;
+  font-family: $theme-font;
+  background-color: $main-color;
 }
