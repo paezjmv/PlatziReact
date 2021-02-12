@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Login.scss';
 
 const Register = () => (
@@ -11,7 +12,11 @@ const Register = () => (
         <input className='input' type='password' placeholder='Contraseña' />
         <button className='button' type='button'>Registrarme</button>
       </form>
-      <p className='login__container--iniciarsesion'><a href='iniciar-sesion.html'>Iniciar Sesión</a></p>
+      <p className='login__container--iniciarsesion'>
+        <Link to='/login'>
+          Iniciar Sesión
+        </Link>
+      </p>
     </section>
   </section>
 );
