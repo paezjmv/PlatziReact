@@ -9,9 +9,11 @@ import userIcon from '../assets/static/icon-platzivideo.png';
 
 const Header = (props) => {
   const { user } = props;
+  // User validation
   const hasUser = Object.keys(user).length > 0;
 
   const handleLogout = () => {
+    // Simulation of LogOut
     props.logoutRequest({});
   };
 
@@ -22,7 +24,7 @@ const Header = (props) => {
       </Link>
       <div className='header__menu'>
         <div className='header__menu--profile'>
-          {
+          { //Gravatar Validation
             hasUser ?
               <img src={gravatar(user.email)} alt={user.email} /> :
               <img src={userIcon} alt='' />
@@ -30,7 +32,7 @@ const Header = (props) => {
           <p>Perfil</p>
         </div>
         <ul>
-          {
+          { //LogIn-Logout Validation
             hasUser ?
               <li><a href='/'>{user.name}</a></li> :
               null
