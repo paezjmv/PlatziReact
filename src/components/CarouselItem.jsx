@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { setFavorite, deleteFavorite } from '../actions/index';
 import '../assets/styles/components/CarouselItem.scss';
 import playIcon from '../assets/static/icon-play.png';
@@ -23,13 +24,30 @@ const CarouselItem = (props) => {
       <img className='carrousel-item__img' src={cover} alt={title} />
       <div className='carrousel-item__details'>
         <div>
-          {isList ?
-            <img className='carrousel-item__details--img' src={removeIcon} alt='remove' onClick={() => handleDeleteFavorite(id)} />
-            :
-            <img className='carrousel-item__details--img' src={plusIcon} alt='Plus' onClick={handleSetFavorite} />
+          <Link to={`/player/${id}`}>
+            <img
+              className='carrousel-item__details--img'
+              src={playIcon}
+              alt='Play Icon'
+            />
+          </Link>
+          {
+            isList ? (
+              <img
+                className='carrousel-item__details--img'
+                src={removeIcon}
+                alt='remove'
+                onClick={() => handleDeleteFavorite(id)}
+              />
+            ) : (
+              <img
+                className='carrousel-item__details--img'
+                src={plusIcon}
+                alt='Plus'
+                onClick={handleSetFavorite}
+              />
+            )
           }
-
-          <img className='carrousel-item__details--img' src={playIcon} alt='Play' />
         </div>
         <p className='carrousel-item__details--title'>{title}</p>
         <p className='carrousel-item__details--subtitle'>
@@ -41,6 +59,7 @@ const CarouselItem = (props) => {
 };
 
 CarouselItem.propTypes = {
+  id: PropTypes.number,
   cover: PropTypes.string,
   title: PropTypes.string,
   year: PropTypes.number,
