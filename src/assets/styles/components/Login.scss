@@ -30,6 +30,8 @@
   
 .login__container--form label {
     font-size: 14px;
+    margin-top: 2px;
+    text-decoration: none;
 }
   
 .login__container--remember-me {
@@ -57,11 +59,13 @@
     align-items: center;
     font-size: 14px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
   
 .login__container--social-media > div > img {
     width: 30px;
     margin-right: 10px;
+
 }
   
 .login__container--register {
@@ -73,6 +77,7 @@
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
+    margin-left: 5px;
 }
   
 .login__container--register a:hover {

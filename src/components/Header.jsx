@@ -18,7 +18,7 @@ const Header = (props) => {
     props.logoutRequest({});
   };
 
-  //
+  // Header classnames validation for Logion or Register
   const headerClass = classNames('header', {
     isLogin,
     isRegister,
