@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
@@ -35,6 +36,10 @@ const Home = ({ myList, trends, originals }) => {
 
     </>
   );
+};
+
+Home.propTypes = {
+  myList: PropTypes.number,
 };
 
 const mapStateToProps = (state) => {
