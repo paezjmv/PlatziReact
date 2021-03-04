@@ -39,7 +39,7 @@ const Home = ({ myList, trends, originals }) => {
 };
 
 Home.propTypes = {
-  myList: PropTypes.number,
+  myList: PropTypes.array,
 };
 
 const mapStateToProps = (state) => {

@@ -67,9 +67,9 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  user: PropTypes.string,
-  isLogin: PropTypes.string,
-  isRegister: PropTypes.string,
+  user: PropTypes.object,
+  isLogin: PropTypes.any,
+  isRegister: PropTypes.any,
 };
 
 const mapStateToProps = (state) => {

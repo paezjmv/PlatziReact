@@ -16,7 +16,7 @@ const Search = ({ isHome }) => {
 };
 
 Search.propTypes = {
-  isHome: PropTypes.string,
+  isHome: PropTypes.any,
 };
 
 export default Search;
